@@ -31,3 +31,7 @@ yargs(hideBin(process.argv)) // Initialize yargs with CLI arguments
   )
   .demandCommand(1, "You need to specify at least one command.")
   .help().argv; // Ensure the `.argv` call to execute the yargs chain
+
+export * from "./commands/scan";
+export * from "./commands/resolve";
+export * from "./commands/visualize";
